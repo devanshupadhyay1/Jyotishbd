@@ -13,6 +13,7 @@
   "dependencies": {
     "@google/genai": "^1.11.0",
     "cors": "^2.8.5",
+    "axios": "^1.11.0",
     "dotenv": "^17.2.0",
     "express": "^5.1.0",
     "nodemailer": "^7.0.5"
