@@ -4,9 +4,10 @@ const nodemailer = require("nodemailer");
 const cors = require("cors");
 
 const app = express();
-const PORT = 3001;
+const PORT = process.env.PORT || 3001;
 
 app.use(cors());
+app.use(cors({origin'https://jyotishbd-1.onrender.com'}));
 app.use(express.json());
 
 // ✉️ Existing email route (untouched)
