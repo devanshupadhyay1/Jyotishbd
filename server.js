@@ -7,8 +7,7 @@ const axios = require("axios");
 const app = express();
 const PORT = process.env.PORT || 3001;
 
-app.use(cors());
-app.use(cors({origin:'jyotishfd-9a4pcooh2-devanshs-projects-8bce964a.vercel.app'}));
+app.use(cors({origin:'https://jyotishfd-9a4pcooh2-devanshs-projects-8bce964a.vercel.app'}));
 app.use(express.json());
 
 // ✉️ Existing email route (untouched)
