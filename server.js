@@ -8,7 +8,10 @@ const app = express();
 const PORT = process.env.PORT || 3001;
 
 app.use(cors({
-  origin:'https://jyotishfd-2vfa1gt4q-devanshs-projects-8bce964a.vercel.app/'}));
+  origin: [
+    'https://<your-vercel-production-url>', // e.g., 'https://jyotishfd.com' or 'https://jyotishfd-git-master-devansh-projects-8bce964a.vercel.app'
+    /https:\/\/jyotishfd-.*-devanshs-projects-8bce964a\.vercel\.app$/ // This is a regex to match all preview URLs
+  ]}));
 app.use(express.json());
 
 // ✉️ Existing email route (untouched)
